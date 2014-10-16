@@ -52,13 +52,18 @@
 }
 
 -(void)load{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSURL *pList = [[self documentDirectory] URLByAppendingPathComponent:@"pastes.plist"];
     self.adoredToothpastes = [NSMutableArray arrayWithContentsOfURL:pList];
+    NSLog(@"date: %@", [userDefaults objectForKey:@"LastSaved"]);
 }
 
 -(void)save{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSURL *pList = [[self documentDirectory] URLByAppendingPathComponent:@"pastes.plist"];
     [self.adoredToothpastes writeToURL:pList atomically:YES];
+    [userDefaults setObject:[NSDate date] forKey:@"LastSaved"];
+    [userDefaults synchronize];
 }
 
 
