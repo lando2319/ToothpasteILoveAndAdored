@@ -10,7 +10,7 @@
 		CC0EC85819F020CB00DB7F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC85719F020CB00DB7F64 /* main.m */; };
 		CC0EC85B19F020CB00DB7F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC85A19F020CB00DB7F64 /* AppDelegate.m */; };
 		CC0EC85E19F020CB00DB7F64 /* ToothpasteILoveAndAdored.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC85C19F020CB00DB7F64 /* ToothpasteILoveAndAdored.xcdatamodeld */; };
-		CC0EC86119F020CB00DB7F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC86019F020CB00DB7F64 /* ViewController.m */; };
+		CC0EC86119F020CB00DB7F64 /* AdoredToothpastesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC86019F020CB00DB7F64 /* AdoredToothpastesViewController.m */; };
 		CC0EC86419F020CB00DB7F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC86219F020CB00DB7F64 /* Main.storyboard */; };
 		CC0EC86619F020CB00DB7F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC86519F020CB00DB7F64 /* Images.xcassets */; };
 		CC0EC86919F020CC00DB7F64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC86719F020CC00DB7F64 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		CC0EC85919F020CB00DB7F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CC0EC85A19F020CB00DB7F64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CC0EC85D19F020CB00DB7F64 /* ToothpasteILoveAndAdored.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToothpasteILoveAndAdored.xcdatamodel; sourceTree = "<group>"; };
-		CC0EC85F19F020CB00DB7F64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CC0EC86019F020CB00DB7F64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CC0EC85F19F020CB00DB7F64 /* AdoredToothpastesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdoredToothpastesViewController.h; sourceTree = "<group>"; };
+		CC0EC86019F020CB00DB7F64 /* AdoredToothpastesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdoredToothpastesViewController.m; sourceTree = "<group>"; };
 		CC0EC86319F020CB00DB7F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC0EC86519F020CB00DB7F64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC0EC86819F020CC00DB7F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			children = (
 				CC0EC85919F020CB00DB7F64 /* AppDelegate.h */,
 				CC0EC85A19F020CB00DB7F64 /* AppDelegate.m */,
-				CC0EC85F19F020CB00DB7F64 /* ViewController.h */,
-				CC0EC86019F020CB00DB7F64 /* ViewController.m */,
+				CC0EC85F19F020CB00DB7F64 /* AdoredToothpastesViewController.h */,
+				CC0EC86019F020CB00DB7F64 /* AdoredToothpastesViewController.m */,
 				CC0EC86219F020CB00DB7F64 /* Main.storyboard */,
 				CC0EC86519F020CB00DB7F64 /* Images.xcassets */,
 				CC0EC86719F020CC00DB7F64 /* LaunchScreen.xib */,
@@ -224,7 +224,7 @@
 			files = (
 				CC0EC85B19F020CB00DB7F64 /* AppDelegate.m in Sources */,
 				CC0EC85819F020CB00DB7F64 /* main.m in Sources */,
-				CC0EC86119F020CB00DB7F64 /* ViewController.m in Sources */,
+				CC0EC86119F020CB00DB7F64 /* AdoredToothpastesViewController.m in Sources */,
 				CC0EC85E19F020CB00DB7F64 /* ToothpasteILoveAndAdored.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
