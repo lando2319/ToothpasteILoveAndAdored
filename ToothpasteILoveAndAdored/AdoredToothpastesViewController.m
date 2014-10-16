@@ -7,8 +7,11 @@
 //
 
 #import "AdoredToothpastesViewController.h"
+#import "ToothpastesTableViewController.h"
 
 @interface AdoredToothpastesViewController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *adoredTableView;
+@property NSMutableArray *adoredToothpastes;
 
 @end
 
@@ -16,15 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.adoredToothpastes = [NSMutableArray array];
+}
+
+-(IBAction)unwindFromToothpastesViewController:(UIStoryboardSegue *)segue {
+    ToothpastesTableViewController *viewController = segue.sourceViewController;
+    [self.adoredToothpastes addObject:[viewController adoredToothpaste]];
+    [self.adoredTableView reloadData];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.adoredToothpastes.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCellID"];
+    cell.textLabel.text = [self.adoredToothpastes objectAtIndex:indexPath.row];
     return cell;
 }
 

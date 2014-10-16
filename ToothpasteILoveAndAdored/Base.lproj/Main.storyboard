@@ -29,18 +29,57 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Voe-CD-lXS"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="5FR-DJ-SrQ"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="eVu-QW-bUh"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Adored Toothpaste" id="XdF-5E-4Ww"/>
+                    <navigationItem key="navigationItem" title="Adored Toothpaste" id="XdF-5E-4Ww">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="z6S-uP-xne">
+                            <connections>
+                                <segue destination="IKz-MD-rv5" kind="show" id="0KT-Ob-duG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adoredToothpastes" destination="vY5-Ey-b4v" id="qjV-rT-4vl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="1042"/>
+        </scene>
+        <!--Toothpastes Table View Controller-->
+        <scene sceneID="fMA-EO-ZRT">
+            <objects>
+                <tableViewController id="IKz-MD-rv5" customClass="ToothpastesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6um-eA-Bxm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCellID" id="Gvw-zZ-Peg">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gvw-zZ-Peg" id="Tri-eT-xTM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Jp-k5-VpF" kind="unwind" unwindAction="unwindFromToothpastesViewController:" id="Ng3-4X-Mzs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IKz-MD-rv5" id="1mj-vx-LSA"/>
+                            <outlet property="delegate" destination="IKz-MD-rv5" id="uEK-4J-9ch"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LxC-Rr-pOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5Jp-k5-VpF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="1042"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KEW-yM-1cV">

@@ -15,6 +15,7 @@
 		CC0EC86619F020CB00DB7F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC86519F020CB00DB7F64 /* Images.xcassets */; };
 		CC0EC86919F020CC00DB7F64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC0EC86719F020CC00DB7F64 /* LaunchScreen.xib */; };
 		CC0EC87519F020CC00DB7F64 /* ToothpasteILoveAndAdoredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC87419F020CC00DB7F64 /* ToothpasteILoveAndAdoredTests.m */; };
+		CC0EC88019F0292C00DB7F64 /* ToothpastesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC87F19F0292C00DB7F64 /* ToothpastesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		CC0EC86E19F020CC00DB7F64 /* ToothpasteILoveAndAdoredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToothpasteILoveAndAdoredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0EC87319F020CC00DB7F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC0EC87419F020CC00DB7F64 /* ToothpasteILoveAndAdoredTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToothpasteILoveAndAdoredTests.m; sourceTree = "<group>"; };
+		CC0EC87E19F0292C00DB7F64 /* ToothpastesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToothpastesTableViewController.h; sourceTree = "<group>"; };
+		CC0EC87F19F0292C00DB7F64 /* ToothpastesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToothpastesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				CC0EC85F19F020CB00DB7F64 /* AdoredToothpastesViewController.h */,
 				CC0EC86019F020CB00DB7F64 /* AdoredToothpastesViewController.m */,
 				CC0EC86219F020CB00DB7F64 /* Main.storyboard */,
+				CC0EC87E19F0292C00DB7F64 /* ToothpastesTableViewController.h */,
+				CC0EC87F19F0292C00DB7F64 /* ToothpastesTableViewController.m */,
 				CC0EC86519F020CB00DB7F64 /* Images.xcassets */,
 				CC0EC86719F020CC00DB7F64 /* LaunchScreen.xib */,
 				CC0EC85C19F020CB00DB7F64 /* ToothpasteILoveAndAdored.xcdatamodeld */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0EC88019F0292C00DB7F64 /* ToothpastesTableViewController.m in Sources */,
 				CC0EC85B19F020CB00DB7F64 /* AppDelegate.m in Sources */,
 				CC0EC85819F020CB00DB7F64 /* main.m in Sources */,
 				CC0EC86119F020CB00DB7F64 /* AdoredToothpastesViewController.m in Sources */,
